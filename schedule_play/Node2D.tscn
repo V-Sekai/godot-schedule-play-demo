@@ -1,12 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://d4is8c1tjlwle"]
 
-[ext_resource path="res://schedule_play/PM_PAS_Aperture_ring_f_stops_021.wav" type="AudioStream" id=1]
-[ext_resource path="res://schedule_play/Node2D.gd" type="Script" id=2]
+[ext_resource type="AudioStream" uid="uid://v66db4a2fg5q" path="res://schedule_play/PM_PAS_Aperture_ring_f_stops_021.wav" id="1"]
+[ext_resource type="Script" path="res://schedule_play/Node2D.gd" id="2"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 2 )
+script = ExtResource("2")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 1 )
-volume_db = -8.0
-script = null
+stream = ExtResource("1")
+volume_db = -0.504
+scheduled_time_usec = 21522569275
+scheduled_time_stop_usec = 21522569275

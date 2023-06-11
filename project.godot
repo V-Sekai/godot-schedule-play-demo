@@ -6,16 +6,13 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[  ]
-_global_script_class_icons={
-}
+config_version=5
 
 [application]
 
 config/name="Schedule Play Demo"
 run/main_scene="res://schedule_play/Node2D.tscn"
+config/features=PackedStringArray("4.1", "Double Precision")
 config/icon="res://icon.png"
 
 [debug]
@@ -29,7 +26,6 @@ common/physics_fps=600
 
 [rendering]
 
+environment/defaults/default_environment="res://default_env.tres"
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
-vram_compression/import_etc2=false
-environment/default_environment="res://default_env.tres"
